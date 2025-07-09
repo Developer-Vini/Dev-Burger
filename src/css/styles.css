@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    backdrop-filter: blur(1px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7); /* Adicionado para melhorar legibilidade */
+}
+
+header img {
+    width: 6%;
+    cursor: pointer;
+    margin-right: 40%;
+    transition: 0.5s;
+    min-width: 60px; /* Adicionado para evitar que fique muito pequeno */
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+header a {
+    color: white;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+header a:hover {
+    color: #fcdb78;
+}
+
+/* HOME */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-top: 60px; 
+}
+
+.home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
+.textos-home {
+    padding: 20px;
+    margin: 60px;
+}
+
+.textos-home h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+.textos-home h1 span {
+    color: #fcdb78;
+    text-decoration: underline;
+}
+
+.textos-home p {
+    font-size: 20px;
+    width: 50%;
+}
+
+.textos-home button {
+    font-size: 15px;
+    width: 15%;
+    padding: 10px;
+    margin-top: 14px;
+    border: 2px solid #ffc20c;
+    background-color: #fcdb78;
+    color: #333;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    min-width: 150px; /* Adicionado para evitar que fique muito estreito */
+}
+
+.textos-home button:active {
+    transform: scale(0.95);
+    background-color: #ffd34d;
+    border: 2px solid #fcdb78;
+}
+
+/* About */
+.sobre {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.sobre h1 span {
+    color: #f7941d;
+}
+
+.sobre h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h2 {
+    margin-bottom: 1rem;
+    color: wheat;
+}
+
+.texto p {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.imagem img {
+    width: 110%;
+    transform: rotate(-5deg);
+    max-width: 100%; /* Adicionado para responsividade */
+}
+
+.line {
+    border: 1px solid wheat;
+}
+
+/* Contato */
+.contato {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.contato h2 span {
+    color: #d35400;
+}
+
+.contato h2 {
+    color: #e67e22;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.contato-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10rem;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.contato-form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 150%;
+    padding: 0.8rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contato-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contato-form button {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    width: 150%;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.contato-form button:hover {
+    background-color: #d35400;
+}
+
+.contato-info {
+    flex: 2;
+    text-align: left;
+    padding: 0 1rem;
+    color: white;
+}
+
+.contato-info p {
+    margin: 1rem 0;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+}
+
+/* Map */
+.section-map h1 {
+    color: #e67e22;
+    margin: 30px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section-map h1 span {
+    color: #d35400;
+}
+
+.container-map {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container-map > iframe {
+    background: black;
+    border: none;
+    height: 450px;
+    width: 900px;
+    margin: 10px;
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 6px;
+    padding: 20px;
+}

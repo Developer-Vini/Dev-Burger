@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Burger</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="src/img/logo.png" alt="logo da pagina">
+        <nav>
+            <ul>
+                <li><a href="#section-home">Home</a></li>
+                <li><a href="#section-sobre">Sobre</a></li>
+                <li><a href="#section-contato">Contato</a></li>
+                <li><a href="#section-map">Endereço</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-home" class="home">
+            <img src="src/img/background.jpg" alt="Hambúrguer suculento com queijo derretendo">
+            <div class="textos-home">
+                <h1><span>experimente</span> o melhor <br>hambúrguer <br>artesanal do brasil</h1>
+                <p>
+                    Feitos com carne 100% Angus, pães frescos assados diariamente e molhos exclusivos.
+                    Cada mordida é uma explosão de sabores que vai te fazer voltar sempre!
+                </p>
+                <button>Monte seu combo</button>
+            </div>
+        </section>
+
+        <section id="section-sobre" class="sobre">
+            <h1><span>Sobre</span> Nós</h1>
+            <div class="line"></div>
+            <div class="conteudo">
+                <div class="texto">
+                    <h2>Mais do que hambúrgueres, uma experiência!</h2>
+                    <p>
+                        Desde 2015, a <strong>Nome da Hamburgueria</strong> vem transformando a paixão por hambúrgueres
+                        em verdadeiras obras-primas gastronômicas. Tudo começou com uma simples churrasqueira no
+                        quintal, e hoje somos referência em sabores ousados e ingredientes premium.
+                    </p>
+                    <p>
+                        Aqui, cada mordida é feita com pão artesanal, carne selecionada e molhos exclusivos – porque
+                        acreditamos que hambúrguer bom é aquele feito com cuidado e criatividade.
+                    </p>
+                    <p>
+                        Nosso time é movido pela missão de oferecer não só comida, mas momentos inesquecíveis. Estamos
+                        esperando por você!
+                    </p>
+                </div>
+                <div class="imagem">
+                    <img src="src/img/Hamburguer.png" alt="Hambúrguer artesanal">
+                </div>
+            </div>
+            <div class="line"></div>
+        </section>
+
+        <section id="section-contato" class="contato">
+            <h2><span>Fale</span> com a gente!</h2>
+            <div class="contato-container">
+                <form class="contato-form">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <input type="tel" placeholder="Seu telefone (opcional)">
+                    <textarea placeholder="Sua mensagem..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <div class="contato-info">
+                    <h3>Nos encontre também:</h3>
+                    <p>📞 (11) 99999-9999</p>
+                    <p>📧 contato@gmail.com</p>
+                    <p>📍 Rua do R, 123 - São Paulo/SP</p>
+
+                    <div class="redes-sociais">
+                        <a href="#"><img src="src/img/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="src/img/whatsapp.png" alt="WhatsApp"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-map" class="section-map">
+            <div class="container-map">
+                <h1><span>Venha</span> nós visitar!</h1>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2339099.8240678622!2d-34.127372627934385!3d-7.656144022045457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1752059257550!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>Feito por, Vinicius!🖤</h1>
+    </footer>
+</body>
+
+</html>
